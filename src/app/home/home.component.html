@@ -11,21 +11,9 @@
             <h4 class="mt-1 font-weight-normal">Choose a set</h4>
             </div>
             <div class="card-body">
-            <div class="row">
-                <button type="button" class="btn btn-outline-primary mx-auto mb-2 col-md-8">Throne of Eldraine (ELD)</button>
-            </div>
-            <div class="row">
-                <button type="button" class="btn btn-outline-primary mx-auto mb-2 col-md-8">Core Set 2020 (M20)</button>
-            </div>
-            <div class="row">
-                <button type="button" class="btn btn-outline-primary mx-auto mb-2 col-md-8">War of the Spark (WAR)</button>
-            </div>
-            <div class="row">
-                <button type="button" class="btn btn-outline-primary mx-auto mb-2 col-md-8">Ravnica Allegiance (RNA)</button>
-            </div>
-            <div class="row">
-                <button type="button" class="btn btn-outline-primary mx-auto col-md-8">Guilds of Ravnica (GRN)</button>
-            </div>
+                <div *ngFor="let set of sets" class="row">
+                    <button type="button" class="btn btn-outline-primary mx-auto mb-2 col-md-8">{{ set.name }} ({{ set.code }})</button>
+                </div>
             </div>
         </div>
         </div>
