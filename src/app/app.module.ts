@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 @NgModule({
   imports: [
@@ -13,12 +14,14 @@ import { HomeComponent } from './home/home.component';
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent}
+      { path: '', component: HomeComponent },
+      { path: ':set.code', component: QuizComponent }
     ])
   ],
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    QuizComponent
   ],
   bootstrap: [ AppComponent ],
 })

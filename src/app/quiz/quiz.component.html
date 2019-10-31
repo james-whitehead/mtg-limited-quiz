@@ -1,23 +1,15 @@
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4">Limited Quiz</h1>
-    <p class="lead">Brush up on your Magic: The Gathering set knowledge and get better at Limited</p>
+    <h1 class="display-4">{{ set.name }}</h1>
+    <p class="lead">question goes here</p>
 </div>
-
+    
 <div class="container">
     <div clas="row">
         <div class="card-deck text-center col-5 mx-auto">
-        <div class="card mb-1 box-shadow">
-            <div class="card-header">
-            <h4 class="mt-1 font-weight-normal">Choose a set</h4>
+            <div class="card mb-1 box-shadow">
+                <h4 class="mt-1 font-weight-normal"></h4>
+                <div class="card-body"></div>
             </div>
-            <div class="card-body">
-                <div *ngFor="let set of sets" class="row">
-                    <button type="button" class="btn btn-outline-primary mx-auto mb-2 col-md-8" [routerLink]="['/', set.code]">
-                        {{ set.name }} ({{ set.code | uppercase }})
-                    </button>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
 

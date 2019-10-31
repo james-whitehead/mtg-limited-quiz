@@ -1,23 +1,23 @@
 export const sets = [
     {
         name: 'Throne of Eldraine',
-        code: 'ELD'
+        code: 'eld'
     },
     {
         name: 'Core Set 2020',
-        code: 'M20'
+        code: 'm20'
     },
     {
         name: 'War of the Spark',
-        code: 'WAR'
+        code: 'war'
     },
     {
         name: 'Ravnica Allegiance',
-        code: 'RNA'
+        code: 'rna'
     },
     {
         name: 'Guilds of Ravnica',
-        code: 'GRN'
+        code: 'grn'
     }
   ];
   
