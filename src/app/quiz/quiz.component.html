@@ -5,13 +5,23 @@
     
 <div class="container">
     <div clas="row">
-        <div class="card-deck text-center col-5 mx-auto">
+        <div class="card-deck text-center col-7 mx-auto">
             <div class="card mb-1 box-shadow">
                 <h4 class="mt-1 font-weight-normal"></h4>
-                <div class="card-body"></div>
+                <div class="card-body">
+                    <img [src]="this.cardImg" class="mtg-card mb-3">
+                    <button type="button" (click)="nextCard()" [attr.readonly]="this.cardImg === '../../assets/cardback.png'" class="btn btn-outline-primary mx-auto mb-0 col-md-4">
+                        Next Card
+                    </button>
+                </div>
             </div>
         </div>
+    <div class="row">
+        <button type="button" class="btn btn-outline-primary mx-auto mt-3 col-md-2" [routerLink]="['/']">
+            Back to Menu
+        </button>
     </div>
+</div>
 
     <footer class="pt-4 border-top fixed-bottom">
         <div class="col-12 text-center">
