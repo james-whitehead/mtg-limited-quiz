@@ -5,14 +5,14 @@
 
 <div class="container">
     <div clas="row">
-        <div class="card-deck text-center col-5 mx-auto">
+        <div class="card-deck text-center col-xs-12 col-xl-5 mx-auto">
         <div class="card mb-1 box-shadow">
             <div class="card-header">
             <h4 class="mt-1 font-weight-normal">Choose a Set</h4>
             </div>
             <div class="card-body">
                 <div *ngFor="let set of sets" class="row">
-                    <button type="button" class="btn btn-outline-primary mx-auto mb-2 col-md-8" [routerLink]="['/', set.code]">
+                    <button type="button" class="btn btn-outline-primary mx-auto mb-2 col-xs-10 col-md-8" [routerLink]="['/', set.code]">
                         {{ set.name }} ({{ set.code | uppercase }})
                     </button>
                 </div>
